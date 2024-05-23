@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Anshu Kumar Singh} \\ \vspace{1pt}
+    Bangalore, Karnataka 560062 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 8757452804 ~ \href{mailto:anshu0157@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{anshu0157@gmail.com}} ~ 
+    \href{https://www.linkedin.com/in/alpha9-falcon/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/anshu}}  ~
+    \href{https://github.com/anshu0157}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/anshu0157}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Noida Institute of Engineering and Technology}{August 2017 -- May 2021}
+      {B.Tech, Information Technology}{Greater Noida, Uttar Pradesh}
+    
+    \resumeSubheading
+      {Sri Chaitanya Techno School}{March 2015 -- March 2017}
+      {Class XII, CBSE (Science)}{Vishakhapatnam, Andhra Pradesh}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Kreditbee}{Dec. 2021 -- Present}
+      {Software Engineer}{Bangalore, Karnataka}
+      \resumeItemListStart
+        \resumeItem{Formulated novel compliance regulations for VKYC, edRekyc, and NACH.}
+        \resumeItem{Engineered new web services to streamline the loan process.}
+        \resumeItem{Implemented a cron job to clear pending loan data and compute essential scores required for loan approval.}
+        \resumeItem{Addressed 100+ customer issues and assisted in automating the loan process.}
+        \resumeItem{\textbf{Tech Stack:}{ Python, Flask, Django, MySQL, AWS lambda, EC2, Bash script}}
+      \resumeItemListEnd
+        
+
+    \resumeSubheading
+      {QA InfoTech}{June 2021 -- Nov. 2021}
+      {Software Engineer Trainee}{Noida, Uttar Pradesh}
+      \resumeItemListStart
+        \resumeItem{Engaged in automation testing as a Software Engineer Trainee, demonstrating proficiency in testing principles and methodologies.}
+        \resumeItem{Contributed to test planning, design, and execution, ensuring thorough functional and regression testing coverage.}
+        \resumeItem{Applied proactive troubleshooting, enhancing software stability and reliability.}
+        \resumeItem{\textbf{Tech Stack:}{ Java, Selenium, MySQL}}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Codejudge}{Feb. 2021 -- April 2021}
+      {Problem setter Intern}{Noida, Uttar Pradesh}
+      \resumeItemListStart
+        \resumeItem{Developed programming problems for CodeJudge's platform, ensuring clarity and relevance.}
+        \resumeItem{Created comprehensive problem statements, test cases, and sample solutions.}
+        \resumeItem{Reviewed user submissions, provided feedback, and resolved queries.}
+        \resumeItem{\textbf{Tech Stack:}{ Python, Java, C++, JavaScript, SQL}}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Django Chat Application} $|$ \emph{Django, Python, HTML/CSS, JavaScript}}{May 2022}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented the database schema using Django ORM for storing user information and chat messages.}
+            \resumeItem{Developed user authentication and authorization functionality to ensure secure access to the chat application.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Django E-commerce Website} $|$ \emph{Django, Python, HTML/CSS, JavaScript}}{Sept. 2021}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented Django ORM database schema for optimized data management.}
+            \resumeItem{Engineered user authentication and registration systems for secure account management.}
+            \resumeItem{Created dynamic product catalog with search, filter, and sorting capabilities.}
+            \resumeItem{Deployed platform on cloud hosting services for scalability and reliability.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C, HTML/CSS, JavaScript, SQL, Bash Script} \\
+     \textbf{Cloud Services}{: AWS EC2, AWS Lambda, SNS/SQS, API Gateway, AWS ECS, CloudWatch, AWS Fargate, AWS ELB} \\
+     \textbf{Technologies/Frameworks}{: Linux, Git, Flask, Django, Nginx, uwsgi/Gunicorn, Redis Lock, Celery, Rest API} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{REWA}{Sept. 2023 -- Dec. 2023}{Module lead}{Kreditbee}
+            \resumeItemListStart
+                \resumeItem{Led a team of 3 members in FCU project.}
+                \resumeItem{Oversaw project planning, delegation of tasks, and timeline management.}
+                \resumeItem{Facilitated team meetings, provided guidance, and resolved conflicts to ensure project success.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+\end{document}
